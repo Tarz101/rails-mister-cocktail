@@ -4,12 +4,6 @@ class DosesController < ApplicationController
     @dose = Dose.new(dose_params)
     @dose.cocktail = @cocktail
     @dose.save
-    # if @dose.save
-    #   redirect_to cocktail_path(@cocktail)
-    # else
-    #   @review = Review.new
-    #   render "cocktails/show"
-    # end
   end
 
   def destroy
